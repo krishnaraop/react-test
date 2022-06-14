@@ -8,9 +8,9 @@ function TopNavbar() {
             <a class="navbar-brand" href="/">
               Divya Drishti
             </a>
-            <a href="/angular" style={{ textDecoration: "none" }}>
+            {/* <a href="/angular" style={{ textDecoration: "none" }}>
               Angular13
-            </a>
+            </a> */}
             <div>
               <input type="text" placeholder="Search here..." />
               <button>

@@ -5,8 +5,6 @@ import TopNavbar from "./TopNavbar";
 import System from "./System";
 import ComponentRoot from "./Components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AddRefresh from "./Forms/AddRefresh";
-import SData from "./container/Sdata";
 
 function App() {
   return (
@@ -18,7 +16,7 @@ function App() {
         <LeftSidebar />
       </div>
       <hr />
-      {/* <SData /> */}
+
       <BrowserRouter>
         <Routes>
           {/* <Route index element={<Dashboard />}></Route>
