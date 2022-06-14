@@ -1,7 +1,10 @@
 function LogAnalyzer() {
   return (
     <>
-      <h4>LogAnalyzer</h4>{" "}
+      <div className="container">
+        <h5>Log Analyzer</h5> <br />
+        <p>in development, will be available shortly</p>
+      </div>
     </>
   );
 }

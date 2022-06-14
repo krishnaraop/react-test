@@ -59,17 +59,17 @@ function Dmn() {
     <>
       {/* <h6>DMN editor for React18</h6> */}
       <div className="toolbar">
-        <span className="hidden">File contains unsaved changes.</span>
-        <Button id="undo" onClick={undo1}>
+        <span className="hidden"> File contains unsaved changes. </span>
+        <Button id="undo" variant="secondary" onClick={undo1}>
           Undo
         </Button>{" "}
-        <Button id="redo" gap={2} onClick={redo1}>
+        <Button id="redo" variant="secondary" gap={2} onClick={redo1}>
           Redo
         </Button>{" "}
-        <Button id="download" onClick={download}>
+        {/* <Button id="download" onClick={download}>
           Download
-        </Button>{" "}
-        <Button id="downloadSvg" onClick={downloadSvg}>
+        </Button>{" "} */}
+        <Button id="downloadSvg" variant="success" onClick={downloadSvg}>
           Download SVG
         </Button>
       </div>
@@ -78,7 +78,7 @@ function Dmn() {
         className="margin-top-20"
         id="dmn-editor-container"
         ref={dmnEditor}
-        style={{ height: "90vh" }}
+        style={{ height: "100vh" }}
       ></div>
     </>
   );

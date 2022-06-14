@@ -5,7 +5,6 @@ const System = () => {
   return (
     <>
       <div className="container">
-        <h5>System</h5>
         <MainSystem />
       </div>
     </>

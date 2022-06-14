@@ -1,6 +1,10 @@
 import { Row, Col, Tab, Nav } from "react-bootstrap";
+import Instances from "./Availability/Instances";
+import LogAnalyzer from "./Availability/LogAnalyzer";
+import NetworkMonitor from "./Availability/Network";
 import ComponentRoot from "./Components";
 import Dashboard from "./Dashboard";
+import FunctionsContainer from "./Functions";
 import System from "./System";
 
 function LeftSidebar() {
@@ -10,7 +14,7 @@ function LeftSidebar() {
         <Tab.Container id="left-tabs-example" defaultActiveKey="dashboard">
           <Row>
             <Col sm={2}>
-              <Nav variant="pills" className="flex-column">
+              <Nav variant="pills success" className="flex-column secondary">
                 <Nav.Item>
                   <Nav.Link eventKey="dashboard"> Dashboard</Nav.Link>
                 </Nav.Item>
@@ -19,6 +23,23 @@ function LeftSidebar() {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="components"> Components</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="loganalyzer"> Log Analyzer</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="instances"> Instances</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="functionaltests">
+                    Functional Tests
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="networkmonitor">
+                    {" "}
+                    Network Monitor
+                  </Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>
@@ -32,6 +53,18 @@ function LeftSidebar() {
                 </Tab.Pane>
                 <Tab.Pane eventKey="components">
                   <ComponentRoot />
+                </Tab.Pane>
+                <Tab.Pane eventKey="loganalyzer">
+                  <LogAnalyzer />
+                </Tab.Pane>
+                <Tab.Pane eventKey="instances">
+                  <Instances />
+                </Tab.Pane>
+                <Tab.Pane eventKey="functionaltests">
+                  <FunctionsContainer />
+                </Tab.Pane>
+                <Tab.Pane eventKey="networkmonitor">
+                  <NetworkMonitor />
                 </Tab.Pane>
               </Tab.Content>
             </Col>

@@ -5,7 +5,6 @@ function AddInstance({ url, title }) {
   return (
     <>
       <div className="container">
-        <h5>AddInstance-{title}</h5>
         <Formik
           initialValues={{
             serverName: "",
@@ -17,6 +16,7 @@ function AddInstance({ url, title }) {
           }}
         >
           <Form className="row">
+            <h5>AddInstance</h5>
             <div className="col-5">
               <label htmlFor="serverName" className="m-2">
                 ServerName

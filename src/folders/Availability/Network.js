@@ -2,7 +2,8 @@ function NetworkMonitor() {
   return (
     <>
       {" "}
-      <h4>NetworkMonitor</h4>{" "}
+      <h4>Network Monitor</h4> <br />
+      <p>in development, will be available shortly</p>
     </>
   );
 }

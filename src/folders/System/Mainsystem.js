@@ -51,7 +51,8 @@ function MainSystem() {
             </button>
           </Form>
         </Formik>
-      </div>
+      </div>{" "}
+      <br />
       <div className="container  border border-secondary m-3">
         <h5 className="text-center">Available Systems</h5>
         <table class="table">
