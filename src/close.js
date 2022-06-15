@@ -1,63 +1,22 @@
-import React, { Component } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import "./close.css";
 
-export default class Testimonials extends Component {
-  render() {
-    return (
-      <>
-        <div className="uk-flex-between">
-          <h2 className="uk-h2 uk-h1@m uk-margin-remove">
-            What clients{" "}
-            <span class="uk-text-primary dark:uk-text-gray-60">said.</span>
-          </h2>
-        </div>
+const Close = () => {
+  let classA = "iflex";
+  const globalize = () => {
+    return (classA = "iflex2");
+  };
+  return (
+    <>
+      <div className={classA}>
+        <button>increment</button>
+        <button>count</button>
+        <button>reset</button>
+        <button onClick={globalize(() => (classA = "iflex2"))}>
+          globalize
+        </button>
+      </div>
+    </>
+  );
+};
 
-        <Carousel
-          showArrows={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          showStatus={false}
-          autoPlay={true}
-          interval={6100}
-        >
-          <div>
-            <img src="images/brand-01.svg" id="Testimonials-img" />
-            <div className="myCarousel">
-              <h3>Shirley Fultz</h3>
-              <h4>Designer</h4>
-              <p>
-                It's freeing to be able to catch up on customized news and not
-                be distracted by a social media element on the same site
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <img src="images/brand-02.svg" id="Testimonials-img" />
-            <div className="myCarousel">
-              <h3>Daniel Keystone</h3>
-              <h4>Designer</h4>
-              <p>
-                The simple and intuitive design makes it easy for me use. I
-                highly recommend Fetch to my peers.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <img src="images/brand-03.svg" id="Testimonials-img" />
-            <div className="myCarousel">
-              <h3>Theo Sorel</h3>
-              <h4>Designer</h4>
-              <p>
-                I enjoy catching up with Fetch on my laptop, or on my phone when
-                I'm on the go!
-              </p>
-            </div>
-          </div>
-        </Carousel>
-      </>
-    );
-  }
-}
+export default Close;

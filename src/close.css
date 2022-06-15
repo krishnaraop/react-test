@@ -1,0 +1,9 @@
+.iflex{
+    display: flex;
+   
+}
+.iflex2{
+
+    display: flex;
+    flex-direction: row-reverse;
+}

@@ -5,6 +5,7 @@ import TopNavbar from "./TopNavbar";
 import System from "./System";
 import ComponentRoot from "./Components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Close from "../close";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <LeftSidebar />
       </div>
       <hr />
-
+      {/* <Close /> */}
       <BrowserRouter>
         <Routes>
           {/* <Route index element={<Dashboard />}></Route>

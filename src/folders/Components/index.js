@@ -9,6 +9,8 @@ function ComponentRoot() {
   return (
     <>
       <h2 className="text-center">Components</h2>
+    <div className="container">
+
 
       <Tabs
         defaultActiveKey="Heartbeat"
@@ -31,6 +33,7 @@ function ComponentRoot() {
           <Heartbeat />
         </Tab>
       </Tabs>
+    </div>
 
       <hr />
     </>
