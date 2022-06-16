@@ -11,16 +11,16 @@ function LeftSidebar() {
   return (
     <>
       <div className="container">
-        <Tab.Container id="left-tabs-example" defaultActiveKey="dashboard">
+        <Tab.Container id="left-tabs-example" defaultActiveKey="instances">
           <Row>
             <Col sm={2}>
               <Nav variant="pills success" className="flex-column secondary">
-                <Nav.Item>
+                {/* <Nav.Item>
                   <Nav.Link eventKey="dashboard"> Dashboard</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="system">System</Nav.Link>
-                </Nav.Item>
+                </Nav.Item> */}
                 <Nav.Item>
                   <Nav.Link eventKey="components"> Components</Nav.Link>
                 </Nav.Item>
@@ -45,12 +45,12 @@ function LeftSidebar() {
             </Col>
             <Col sm={10}>
               <Tab.Content>
-                <Tab.Pane eventKey="dashboard">
+                {/* <Tab.Pane eventKey="dashboard">
                   <Dashboard />
                 </Tab.Pane>
                 <Tab.Pane eventKey="system">
                   <System />
-                </Tab.Pane>
+                </Tab.Pane> */}
                 <Tab.Pane eventKey="components">
                   <ComponentRoot />
                 </Tab.Pane>

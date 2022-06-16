@@ -4,8 +4,12 @@ function Dashboard() {
   return (
     <>
       <div className="container">
-        <Dmn />
+        {/* <Dmn /> */}
         <hr />
+        <p>
+          We are finalizing the best possible Dashboard, will be available
+          shortly
+        </p>
       </div>
     </>
   );
