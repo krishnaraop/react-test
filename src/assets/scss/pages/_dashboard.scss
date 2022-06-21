@@ -1,0 +1,14 @@
+.dashboardContainer {
+    min-height: 100%;
+    padding: 30px;
+    .linksRow {
+      padding: 10px;
+      .linksCard {
+        padding: 20px;
+        background-color: #fff;
+        .linksChart {
+            padding: 0;
+        }
+      }
+    }
+  }

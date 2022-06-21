@@ -1,0 +1,16 @@
+.btnLogin{
+    background-color: #ccc;
+    padding: 10px 10px;
+    width: auto;
+    border: 2px solid #ccc;
+    color: #343434;
+    border-radius: 25px;
+    transition: all 0.25s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    &:hover{
+        background-color: #fff;
+    }
+}
