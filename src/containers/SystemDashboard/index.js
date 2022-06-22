@@ -1,10 +1,9 @@
 import { Container, Row, Col } from "reactstrap";
 import { Card, Avatar, Chart, Dataset } from "react-rainbow-components";
 import { RiDashboardFill } from "react-icons/ri";
-import { MdOutlinePhoneCallback } from "react-icons/md";
+
 import { RiComputerFill, RiComputerLine } from "react-icons/ri";
-import { GrDocumentUser } from "react-icons/gr";
-import { HiOutlineDocumentDownload } from "react-icons/hi";
+
 import DisplaySystem from "./DisplaySystem";
 import AddSystem from "./AddSystem";
 import axios from "axios";
